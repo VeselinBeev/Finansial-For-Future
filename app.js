@@ -1,1 +1,4 @@
-var app = angular.module("moduleApp", ["ngStorage"]);
+var app = angular.module("moduleApp", [
+    "ngStorage"
+]); 
+
