@@ -1,0 +1,27 @@
+<div ng-if="$ctrl.users">
+  
+  <h3><label><small>Id: {{$ctrl.users.id}}</small></label>{{$ctrl.users.fname}} {{$ctrl.users.mname}} {{$ctrl.users.lname}}</h3>
+  <strong>Ballance: <small>{{$ctrl.users.balance}} <em>lv</em></small></strong> 
+  <br/>
+  <strong>StreetAddress: <small>{{$ctrl.users.streetaddress}}</small></strong> 
+  
+  <div>
+    <label>First Name: </label>
+    <input ng-model="$ctrl.editFName" placeholder="First Name"/>
+    <br/>
+    <label>Middle Name: </label>
+    <input ng-model="$ctrl.editMName" placeholder="Middle Name"/>
+    <br/>
+    <label>Last Name: </label>
+    <input ng-model="$ctrl.editLName" placeholder="Last Name"/>
+    <br/>
+    <label>StreetAddress: </label>
+    <input ng-model="$ctrl.editStreetAddress" placeholder="StreetAddress"/>
+    <br/>
+    <label>Balance: </label>
+    <input ng-model="$ctrl.editBalance" placeholder="Balance"/>
+    <br/>
+  </div>
+  <button ng-click="$ctrl.save()">Save</button> 
+  <button ng-click="$ctrl.cancel()">Cancel</button>
+</div>
